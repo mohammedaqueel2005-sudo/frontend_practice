@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+  <radialGradient id="instaGradient" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fd5"/>
+    <stop offset=".5" stop-color="#ff543e"/>
+    <stop offset="1" stop-color="#c837ab"/>
+  </radialGradient>
+  <path fill="url(#instaGradient)" d="M34.87 4H13.13C7.56 4 3 8.56 3 14.13v21.74C3 39.44 7.56 44 13.13 44h21.74C40.44 44 45 39.44 45 33.87V14.13C45 8.56 40.44 4 34.87 4z"/>
+  <path fill="#fff" d="M24 15.47c-4.7 0-8.53 3.83-8.53 8.53S19.3 32.53 24 32.53 32.53 28.7 32.53 24 28.7 15.47 24 15.47zM24 29.6c-3.09 0-5.6-2.51-5.6-5.6s2.51-5.6 5.6-5.6 5.6 2.51 5.6 5.6-2.51 5.6-5.6 5.6zM33.82 13.72c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+</svg>

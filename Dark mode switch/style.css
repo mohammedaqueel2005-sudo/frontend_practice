@@ -1,0 +1,93 @@
+:root{
+    --base-color:white;
+    --basevariant:#e8e9ed;
+    --text-color:#111528;
+    --secondary-color:#232738;
+    --primary-color:#3a435d;
+    --accent-color:#0071ff;
+}
+
+.darkmode{
+     --base-color:#070b1d;
+    --basevariant:#101425;
+    --text-color:#ffffff;
+    --secondary-color:#a4a5ba;
+    --primary-color:#3a435d;
+    --accent-color:#0071ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background-color: var(--base-color);
+    color:var(--text-color);
+}
+
+header{
+    padding: 38px;
+    margin:20px 0px;
+}
+
+section{
+    padding:50px;
+    background-color: var(--basevariant);
+    margin:20px 0px;
+    height:20vh;
+}
+
+p{
+    font-size: 12px;
+    padding:10px 0px;
+    margin:5px 0px;
+}
+
+button{
+    padding:10px 15px;
+    background-color: var(--primary-color);
+    border:none;
+    border-radius: 3px;
+    color:var(--basevariant)
+}
+
+.cta-btn{
+    background-color: var(--accent-color);
+}
+
+#theme-switch{
+    height:50px;
+    width:50px;
+    padding: 0;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basevariant);
+    position: fixed;
+    right:10px;
+    top:5px;
+}
+
+#theme-switch svg{
+    fill:var(--primary-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+
+.darkmode #theme-switch svg:first-child{
+    display:none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display:block;
+}

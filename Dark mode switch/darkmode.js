@@ -1,0 +1,32 @@
+let darkmode = localStorage.getItem('darkmode');
+const themeSwitch = document.getElementById('theme-switch');
+
+// const enableDarkmode = ()=>{
+//     document.body.classList.add('darkmode');
+//     localStorage.setItem('darkmode','active');
+// }
+
+
+const enableDarkmode = ()=>{
+    document.body.setAttribute("class","darkmode");
+    localStorage.setItem('darkmode','active');
+}
+
+const disableDarkmode = ()=>{
+    document.body.removeAttribute("class");
+    localStorage.setItem('darkmode',null);
+}
+
+if(darkmode === "active"){
+    enableDarkmode();
+}
+
+themeSwitch.addEventListener('click',()=>{
+    darkmode = localStorage.getItem('darkmode');
+    if(darkmode!="active"){
+        enableDarkmode();
+    }
+    else{
+        disableDarkmode();
+    }
+})

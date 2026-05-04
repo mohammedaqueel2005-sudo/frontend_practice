@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(240, 155, 155);
+            display:flex;
+            flex-wrap: unset;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+        }
+        .wrapper{
+            display:flex;
+            gap:20px;
+            width:300px;
+            overflow-x:scroll;
+            scroll-snap-type: x mandatory;
+            margin-top: 200px;
+        }
+
+        .card{
+            scroll-snap-align: center;
+            box-sizing:border-box;
+            padding:20px 30px;
+            flex-shrink:0;
+            width:300px;
+            background-color: white;
+            border-radius:14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor dolore libero et quod modi? Eligendi, deserunt perspiciatis assumenda adipisci aliquid esse nostrum officiis quisquam consequatur, sed velit qui aspernatur soluta veritatis fuga asperiores.</p>
+        </div>
+        <div class="card">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui eveniet labore autem unde at provident maiores nobis cumque laboriosam sapiente libero quaerat, fuga, ab quae saepe doloribus et velit doloremque assumenda molestias hic.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quibusdam neque sint aliquam veritatis doloremque perspiciatis possimus nesciunt unde quidem velit totam quo beatae quisquam, sunt cupiditate reiciendis odit est mollitia. Voluptates, quasi voluptatibus.</p>
+        </div>
+        <div class="card">
+            <h2>Card 4</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quibusdam neque sint aliquam veritatis doloremque perspiciatis possimus nesciunt unde quidem velit totam quo beatae quisquam, sunt cupiditate reiciendis odit est mollitia. Voluptates, quasi voluptatibus.</p>
+        </div>
+        <div class="card">
+            <h2>Card 5</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quibusdam neque sint aliquam veritatis doloremque perspiciatis possimus nesciunt unde quidem velit totam quo beatae quisquam, sunt cupiditate reiciendis odit est mollitia. Voluptates, quasi voluptatibus.</p>
+        </div>
+    </div>
+</body>
+</html>

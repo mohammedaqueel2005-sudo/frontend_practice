@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        body {
+            background-color: rgb(192, 190, 190);
+        }
+
+        .card {
+            background-color: white;
+            width: 340px;
+            height: 450px;
+            border-radius: 10px;
+            margin: 90px;
+        }
+
+        .section1 {
+            background: linear-gradient(to bottom right, rgb(234, 101, 234), rgb(234, 128, 146), yellow);
+            width: 340px;
+            height: 225px;
+            border-radius: 10px 10px 0px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outcir {
+            border: 2px solid white;
+            width: 170px;
+            height: 170px;
+            border-radius: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .incir {
+            border: 2px solid;
+            border-image: linear-gradient(to bottom right, rgb(234, 101, 234), rgb(234, 128, 146), yellow);
+            ;
+            width: 165px;
+            height: 165px;
+            border-radius: 90px;
+        }
+
+        img {
+            width: 165px;
+            height: 165px;
+            border-radius: 90px;
+            object-fit: cover;
+            object-position: top left;
+        }
+
+        .section2 {
+            width: 345px;
+            height: 225px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+
+        button {
+            width: 110px;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 15px;
+            background-color: rgb(208, 199, 255);
+            border: 2px solid rgb(208, 199, 255);
+            color: white;
+        }
+
+        .curve1 {
+            background-color: yellow;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 5px;
+            top: -20px;
+
+        }
+
+        .curve2 {
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 5px;
+            top: -19.5px;
+            border-radius: 0 20px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="section1">
+            <div class="outcir">
+                <div class="incir">
+                    <img src="img.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="curve curve1"></div>
+            <div class="curve curve2"></div>
+            <h2>BladeRunner 2049</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ducimus. Corporis obcaecati, aperiam
+                iusto, molestiae rem optio ducimus minima velit alias tenetur dolore.</p>
+
+            <button>view more</button>
+        </div>
+    </div>
+</body>
+
+</html>

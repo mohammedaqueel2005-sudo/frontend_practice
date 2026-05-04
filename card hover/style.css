@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom right,black,white);
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card_article {
+    /* background-color: red; */
+    width: 270px;
+    height: 80vh;
+    border-radius: 20px;
+
+}
+
+img {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px
+}
+
+.superman-img {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.spiderman-img {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.card_data {
+    padding: 20px;
+    text-align: center;
+    /* border:2px solid; */
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
+    margin: auto;
+    opacity: 0;
+}
+
+.button {
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.card_article:hover .card_data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+@keyframes show-data {
+    50% {
+        transform: translateY(-8rem)
+    }
+
+    100% {
+        transform: translateY(-4rem)
+    }
+}
+
+.card_article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+.card_article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.card_article:not(:hover) .card_data {
+    animation: remove-data 1s forwards;
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-4rem);
+    }
+
+    50% {
+        transform: translateY(-8rem);
+    }
+
+    100% {
+        transform: translateY(-0.1rem)
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+
+    50% {
+        overflow: hidden;
+
+    }
+}
